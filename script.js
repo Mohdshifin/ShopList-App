@@ -55,7 +55,7 @@ function calculateTotal() {
         document.getElementById("discount").innerHTML=  flat_10;
     }else{
         document.getElementById("offer").innerHTML="Your are not eligible for any Offer!!.."; 
-        document.getElementById("discount").innerHTML="$00"
+        document.getElementById("discount").innerHTML=0;
     }
 
     // Shipping fee details
@@ -68,7 +68,7 @@ function calculateTotal() {
 
     //   Grand total details
 
-    // discountValue = parseInt(document.getElementById("discount").innerHTML);
+    discountValue = parseInt(document.getElementById("discount").innerHTML.trim());
     if(discountValue == 0){
         grandTotal = total  + Shipping;
     }else {
