@@ -66,10 +66,24 @@ body{
 footer{ 
   position: absolute;
   bottom: 0;
-  padding: 15px;
+  padding: 15px 100% ;
   display: flex;
   justify-content: center;
   gap: 50px;
   align-items: center;
   font-size: 20px;
+  background: rgb(99, 97, 97);
+}
+
+footer i{
+  color: #fff;
+
+}
+
+
+footer i:hover{
+  /* font-size: 21px; */
+  color: indigo;
+  text-decoration: underline;
+
 }
