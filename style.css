@@ -25,9 +25,11 @@ body{
 }
 
 .container{
-  background-color: #ddf3fc;
-  padding: 50px;
+  background-color: #e7f4f9;
+  padding: 40px;
   border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .container h1{
@@ -54,6 +56,10 @@ body{
   background: rgb(40, 93, 249);
 }
 
+#btn:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
+}
+
 .total{ 
   margin-top: 10px;
   background: rebeccapurple;
@@ -66,7 +72,8 @@ body{
 footer{ 
   position: absolute;
   bottom: 0;
-  padding: 15px 100% ;
+  padding: 15px;
+  width: 100%;
   display: flex;
   justify-content: center;
   gap: 50px;
@@ -86,4 +93,22 @@ footer i:hover{
   color: indigo;
   text-decoration: underline;
 
+}
+
+/* @media query */
+
+@media screen and (max-width:600px) { 
+  table, th, td {
+    padding: 6px;
+  }
+
+  .container{
+    padding: 20px;
+  }
+
+  .container table input{
+    padding: 2px;
+    height: 30px;
+    width: 90px;
+  }
 }
